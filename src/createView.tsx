@@ -8,11 +8,12 @@ export type ViewModelProps<Model extends DefaultModel = DefaultModel> =
       model: Model;
     }
   | { status: 'loading' }
-  | { status: 'error'; error: Error }
+  | { status: 'error'; error: Error; onRetry?: () => void }
   | { status: 'empty' };
 
 export type FailureProps = {
   error: Error;
+  onRetry?: () => void;
 };
 
 export type CreateViewInput<Model extends DefaultModel> = {
