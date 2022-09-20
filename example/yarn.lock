@@ -7270,7 +7270,7 @@ react-app-polyfill@^3.0.0:
     regenerator-runtime "^0.13.9"
     whatwg-fetch "^3.6.2"
 
-"react-create-view@file:../":
+"react-create-view@file:..":
   version "1.0.0"
 
 react-dev-utils@^12.0.1:
