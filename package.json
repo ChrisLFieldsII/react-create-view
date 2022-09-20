@@ -1,13 +1,16 @@
 {
   "name": "react-create-view",
   "version": "1.0.0",
-  "description": "a utility to standardize creating views that go through different states like loading, success, empty, error",
+  "description": "a utility to standardize creating react views that go through different states like loading, success, empty, error",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
   "repository": "https://github.com/ChrisLFieldsII/react-create-view",
   "license": "MIT",
-  "keywords": [],
+  "keywords": [
+    "react",
+    "view"
+  ],
   "scripts": {
     "build": "run-p build:*",
     "build:main": "tsc -p tsconfig.json",
