@@ -26,6 +26,21 @@ type VMProps = ViewModelProps<
   EmptyModel
 >;
 
+const View = createView<SuccessModel, FailureModel, LoadingModel, EmptyModel>({
+  Success({ name }) {
+    return <h1>{name}</h1>;
+  },
+  Failure({ error }) {
+    return <h1>{error.message}</h1>;
+  },
+  Loading({ icon }) {
+    return <h1>{icon}</h1>;
+  },
+  Empty({ msg }) {
+    return <h1>{msg}</h1>;
+  },
+});
+
 test('success', (t) => {
   const useViewModel = (): VMProps => {
     return {
@@ -35,12 +50,6 @@ test('success', (t) => {
       },
     };
   };
-
-  const View = createView<SuccessModel>({
-    Success({ name }) {
-      return <h1>{name}</h1>;
-    },
-  });
 
   const Comp = () => {
     const vm = useViewModel();
@@ -64,12 +73,6 @@ test('failure', (t) => {
     };
   };
 
-  const View = createView<SuccessModel, FailureModel>({
-    Failure({ error }) {
-      return <h1>{error.message}</h1>;
-    },
-  });
-
   const Comp = () => {
     const vm = useViewModel();
     return <View {...vm} />;
@@ -92,12 +95,6 @@ test('loading', (t) => {
     };
   };
 
-  const View = createView<SuccessModel, FailureModel, LoadingModel>({
-    Loading({ icon }) {
-      return <h1>{icon}</h1>;
-    },
-  });
-
   const Comp = () => {
     const vm = useViewModel();
     return <View {...vm} />;
@@ -119,14 +116,6 @@ test('empty', (t) => {
       },
     };
   };
-
-  const View = createView<SuccessModel, FailureModel, LoadingModel, EmptyModel>(
-    {
-      Empty({ msg }) {
-        return <h1>{msg}</h1>;
-      },
-    }
-  );
 
   const Comp = () => {
     const vm = useViewModel();
