@@ -10,7 +10,7 @@ export type ViewModelProps<
 > =
   | {
       status: 'success';
-      model: SuccessModel;
+      model?: SuccessModel;
     }
   | { status: 'loading'; model?: LoadingModel }
   | { status: 'error'; model?: FailureModel }
@@ -22,7 +22,7 @@ export type CreateViewInput<
   LoadingModel extends DefaultModel = DefaultModel,
   EmptyModel extends DefaultModel = DefaultModel
 > = {
-  Success: (props: SuccessModel) => JSX.Element;
+  Success?: (props: SuccessModel) => JSX.Element;
   Loading?: (props: LoadingModel) => JSX.Element;
   Failure?: (props: FailureModel) => JSX.Element;
   Empty?: (props: EmptyModel) => JSX.Element;
@@ -45,7 +45,7 @@ export const createView = <
   ViewModelProps<SuccessModel, FailureModel, LoadingModel, EmptyModel>
 > => {
   const {
-    Success,
+    Success = RenderNull,
     Failure = RenderNull,
     Loading = RenderNull,
     Empty = RenderNull,
