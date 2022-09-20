@@ -1,0 +1,287 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>react-create-view</title>
+	<meta name="description" content="Documentation for react-create-view">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">react-create-view</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1>react-create-view</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="globals.html#createviewinput" class="tsd-kind-icon">Create<wbr>View<wbr>Input</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#defaultmodel" class="tsd-kind-icon">Default<wbr>Model</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="globals.html#viewmodelprops" class="tsd-kind-icon">View<wbr>Model<wbr>Props</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function"><a href="globals.html#rendernull" class="tsd-kind-icon">Render<wbr>Null</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="globals.html#createview" class="tsd-kind-icon">create<wbr>View</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+					<a name="createviewinput" class="tsd-anchor"></a>
+					<h3>Create<wbr>View<wbr>Input</h3>
+					<div class="tsd-signature tsd-kind-icon">Create<wbr>View<wbr>Input&lt;SuccessModel, FailureModel, LoadingModel, EmptyModel&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>Empty<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EmptyModel</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">; </span>Failure<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FailureModel</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">; </span>Loading<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">LoadingModel</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">; </span>Success<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SuccessModel</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChrisLFieldsII/react-create-view/blob/2a9f1b4/src/createView.tsx#L25">createView.tsx:25</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Input type for <code>createView</code> utility.</p>
+						</div>
+					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>SuccessModel<span class="tsd-signature-symbol">: </span><a href="globals.html#defaultmodel" class="tsd-signature-type">DefaultModel</a> = <span class="tsd-signature-type">DefaultModel</span></h4>
+						</li>
+						<li>
+							<h4>FailureModel<span class="tsd-signature-symbol">: </span><a href="globals.html#defaultmodel" class="tsd-signature-type">DefaultModel</a> = <span class="tsd-signature-type">DefaultModel</span></h4>
+						</li>
+						<li>
+							<h4>LoadingModel<span class="tsd-signature-symbol">: </span><a href="globals.html#defaultmodel" class="tsd-signature-type">DefaultModel</a> = <span class="tsd-signature-type">DefaultModel</span></h4>
+						</li>
+						<li>
+							<h4>EmptyModel<span class="tsd-signature-symbol">: </span><a href="globals.html#defaultmodel" class="tsd-signature-type">DefaultModel</a> = <span class="tsd-signature-type">DefaultModel</span></h4>
+						</li>
+					</ul>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> Empty<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EmptyModel</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">)</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> Failure<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FailureModel</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">)</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> Loading<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">LoadingModel</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">)</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> Success<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SuccessModel</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">)</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="defaultmodel" class="tsd-anchor"></a>
+					<h3>Default<wbr>Model</h3>
+					<div class="tsd-signature tsd-kind-icon">Default<wbr>Model<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChrisLFieldsII/react-create-view/blob/2a9f1b4/src/createView.tsx#L3">createView.tsx:3</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+					<a name="viewmodelprops" class="tsd-anchor"></a>
+					<h3>View<wbr>Model<wbr>Props</h3>
+					<div class="tsd-signature tsd-kind-icon">View<wbr>Model<wbr>Props&lt;SuccessModel, FailureModel, LoadingModel, EmptyModel&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>model<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">SuccessModel</a><span class="tsd-signature-symbol">; </span>status<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"success"</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>model<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">LoadingModel</a><span class="tsd-signature-symbol">; </span>status<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"loading"</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>model<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">FailureModel</a><span class="tsd-signature-symbol">; </span>status<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"error"</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>model<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">EmptyModel</a><span class="tsd-signature-symbol">; </span>status<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"empty"</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChrisLFieldsII/react-create-view/blob/2a9f1b4/src/createView.tsx#L8">createView.tsx:8</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Generic type for different statuses a view can go through.</p>
+						</div>
+					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>SuccessModel<span class="tsd-signature-symbol">: </span><a href="globals.html#defaultmodel" class="tsd-signature-type">DefaultModel</a> = <span class="tsd-signature-type">DefaultModel</span></h4>
+						</li>
+						<li>
+							<h4>FailureModel<span class="tsd-signature-symbol">: </span><a href="globals.html#defaultmodel" class="tsd-signature-type">DefaultModel</a> = <span class="tsd-signature-type">DefaultModel</span></h4>
+						</li>
+						<li>
+							<h4>LoadingModel<span class="tsd-signature-symbol">: </span><a href="globals.html#defaultmodel" class="tsd-signature-type">DefaultModel</a> = <span class="tsd-signature-type">DefaultModel</span></h4>
+						</li>
+						<li>
+							<h4>EmptyModel<span class="tsd-signature-symbol">: </span><a href="globals.html#defaultmodel" class="tsd-signature-type">DefaultModel</a> = <span class="tsd-signature-type">DefaultModel</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="rendernull" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> Render<wbr>Null</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">Render<wbr>Null<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChrisLFieldsII/react-create-view/blob/2a9f1b4/src/createView.tsx#L37">createView.tsx:37</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="createview" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> create<wbr>View</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>View&lt;SuccessModel, FailureModel, LoadingModel, EmptyModel&gt;<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><a href="globals.html#createviewinput" class="tsd-signature-type">CreateViewInput</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SuccessModel</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">FailureModel</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">LoadingModel</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">EmptyModel</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">React.FC</span><span class="tsd-signature-symbol">&lt;</span><a href="globals.html#viewmodelprops" class="tsd-signature-type">ViewModelProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SuccessModel</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">FailureModel</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">LoadingModel</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">EmptyModel</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChrisLFieldsII/react-create-view/blob/2a9f1b4/src/createView.tsx#L45">createView.tsx:45</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a <code>View</code> using components that represent different
+									states like <code>Success</code>, <code>Failure</code>, <code>Loading</code>, and <code>Empty</code>.</p>
+								</div>
+								<p>Each state component is passed its own model according to <code>ViewModelProps</code> type.</p>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>SuccessModel<span class="tsd-signature-symbol">: </span><a href="globals.html#defaultmodel" class="tsd-signature-type">DefaultModel</a> = <span class="tsd-signature-type">DefaultModel</span></h4>
+								</li>
+								<li>
+									<h4>FailureModel<span class="tsd-signature-symbol">: </span><a href="globals.html#defaultmodel" class="tsd-signature-type">DefaultModel</a> = <span class="tsd-signature-type">DefaultModel</span></h4>
+								</li>
+								<li>
+									<h4>LoadingModel<span class="tsd-signature-symbol">: </span><a href="globals.html#defaultmodel" class="tsd-signature-type">DefaultModel</a> = <span class="tsd-signature-type">DefaultModel</span></h4>
+								</li>
+								<li>
+									<h4>EmptyModel<span class="tsd-signature-symbol">: </span><a href="globals.html#defaultmodel" class="tsd-signature-type">DefaultModel</a> = <span class="tsd-signature-type">DefaultModel</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>input: <a href="globals.html#createviewinput" class="tsd-signature-type">CreateViewInput</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SuccessModel</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">FailureModel</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">LoadingModel</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">EmptyModel</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">React.FC</span><span class="tsd-signature-symbol">&lt;</span><a href="globals.html#viewmodelprops" class="tsd-signature-type">ViewModelProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SuccessModel</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">FailureModel</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">LoadingModel</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">EmptyModel</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals current ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="globals.html#createviewinput" class="tsd-kind-icon">Create<wbr>View<wbr>Input</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#defaultmodel" class="tsd-kind-icon">Default<wbr>Model</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="globals.html#viewmodelprops" class="tsd-kind-icon">View<wbr>Model<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#rendernull" class="tsd-kind-icon">Render<wbr>Null</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#createview" class="tsd-kind-icon">create<wbr>View</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
