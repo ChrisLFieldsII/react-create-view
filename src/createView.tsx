@@ -1,7 +1,10 @@
 import React from 'react';
 
-export type DefaultModel = Record<string, unknown>;
+type DefaultModel = Record<string, unknown>;
 
+/**
+ * Generic type for different statuses a view can go through.
+ */
 export type ViewModelProps<
   SuccessModel extends DefaultModel = DefaultModel,
   FailureModel extends DefaultModel = DefaultModel,
@@ -16,6 +19,9 @@ export type ViewModelProps<
   | { status: 'error'; model?: FailureModel }
   | { status: 'empty'; model?: EmptyModel };
 
+/**
+ * Input type for `createView` utility.
+ */
 export type CreateViewInput<
   SuccessModel extends DefaultModel = DefaultModel,
   FailureModel extends DefaultModel = DefaultModel,
@@ -28,11 +34,13 @@ export type CreateViewInput<
   Empty?: (props: EmptyModel) => JSX.Element;
 };
 
-export const RenderNull = () => null;
+const RenderNull = () => null;
 
 /**
- * Create a UI `View` given a `ViewModel` and components that represent different
- * states like `Success`, `Loading`, `Empty`, `Failure`.
+ * Create a `View` using components that represent different
+ * states like `Success`, `Failure`, `Loading`, and `Empty`.
+ *
+ * Each state component is passed its own model according to `ViewModelProps` type.
  */
 export const createView = <
   SuccessModel extends DefaultModel = DefaultModel,
