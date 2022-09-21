@@ -103,3 +103,7 @@ const MyComponent = () => {
 
 // use <MyComponent /> anywhere!
 ```
+
+## Improvements
+
+The one thing I feel can be approved is it would be nice to pass the `ViewModelProps` type to `createView` so dont have to redo generics, but I don't know this TS wizardry. So if you do, help!
